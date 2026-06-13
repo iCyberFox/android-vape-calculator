@@ -84,4 +84,4 @@ VapeCalc/
 
 **Gradle sync failed** → `File → Invalidate Caches → Restart`
 
-**"minSdk"** помилка → в `app/build.gradle` змінити `minSdk 24` на нижче якщо потрібно
+**"minSdk"** помилка → в `app/build.gradle` змінити `minSdk 24` на нижче якщо потрібно.
