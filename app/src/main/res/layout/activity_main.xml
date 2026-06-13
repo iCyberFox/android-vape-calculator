@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primary">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0"/>
+
+    <LinearLayout
+        android:id="@+id/custom_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="56dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+
+        <!-- Liquid -->
+        <LinearLayout
+            android:id="@+id/nav_liquid_container"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1.2"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/nav_item_bg_active">
+            <ImageView
+                android:id="@+id/nav_liquid_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_nav_liquid"
+                app:tint="#ffffff"/>
+            <TextView
+                android:id="@+id/nav_liquid_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Рідина"
+                android:textColor="#ffffff"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <!-- Base -->
+        <LinearLayout
+            android:id="@+id/nav_base_container"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/nav_base_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_nav_base"
+                app:tint="#2c3e50"/>
+            <TextView
+                android:id="@+id/nav_base_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Основи"
+                android:textColor="#2c3e50"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <!-- Boost -->
+        <LinearLayout
+            android:id="@+id/nav_boost_container"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/nav_boost_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_nav_boost"
+                app:tint="#2c3e50"/>
+            <TextView
+                android:id="@+id/nav_boost_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Буст"
+                android:textColor="#2c3e50"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <!-- Shot -->
+        <LinearLayout
+            android:id="@+id/nav_shot_container"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/nav_shot_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_nav_shot"
+                app:tint="#2c3e50"/>
+            <TextView
+                android:id="@+id/nav_shot_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Шот"
+                android:textColor="#2c3e50"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <!-- Coil -->
+        <LinearLayout
+            android:id="@+id/nav_coil_container"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1.1"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/nav_coil_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_nav_coil"
+                app:tint="#2c3e50"/>
+            <TextView
+                android:id="@+id/nav_coil_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Спіраль"
+                android:textColor="#2c3e50"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

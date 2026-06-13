@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/card_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/tvSaveRecipeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Зберегти рецепт"
+            android:textColor="#2c3e50"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:tint="#7f8c8d"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назва рецепту"
+        android:textColor="#2c3e50"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etRecipeName"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/input_bg"
+        android:textColor="#2c3e50"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:hint="Введіть назву..."
+        android:inputType="text"
+        android:textSize="15sp"
+        android:layout_marginBottom="16dp"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Короткий опис"
+        android:textColor="#2c3e50"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/etRecipeDescription"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/input_bg"
+        android:textColor="#2c3e50"
+        android:padding="12dp"
+        android:hint="Опис (необов'язково)..."
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:textSize="15sp"
+        android:layout_marginBottom="24dp"
+        android:importantForAutofill="no" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_add_bg"
+        android:textColor="#ffffff"
+        android:text="Зберегти"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:fontFamily="sans-serif-medium"/>
+
+</LinearLayout>

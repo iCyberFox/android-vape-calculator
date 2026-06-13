@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:fillViewport="true">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Калькулятор намотки спіралі"
+            android:textColor="#333333"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="20dp"
+            android:elevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/calc_block_bg"
+                android:padding="15dp"
+                android:layout_marginBottom="15dp">
+
+                <!-- Кількість проводів -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Кількість проводів" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="10dp"/>
+                <RadioGroup android:id="@+id/rgWires" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="15dp">
+                    <RadioButton android:id="@+id/wn1" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_margin="2dp"
+                        android:text="1" android:gravity="center" android:button="@null" android:background="@drawable/segmented_button_bg" android:textColor="@color/segmented_text_color" android:checked="true"/>
+                    <RadioButton android:id="@+id/wn2" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_margin="2dp"
+                        android:text="2" android:gravity="center" android:button="@null" android:background="@drawable/segmented_button_bg" android:textColor="@color/segmented_text_color"/>
+                    <RadioButton android:id="@+id/wn3" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_margin="2dp"
+                        android:text="3" android:gravity="center" android:button="@null" android:background="@drawable/segmented_button_bg" android:textColor="@color/segmented_text_color"/>
+                    <RadioButton android:id="@+id/wn4" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_margin="2dp"
+                        android:text="4" android:gravity="center" android:button="@null" android:background="@drawable/segmented_button_bg" android:textColor="@color/segmented_text_color"/>
+                    <RadioButton android:id="@+id/wn5" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_margin="2dp"
+                        android:text="5" android:gravity="center" android:button="@null" android:background="@drawable/segmented_button_bg" android:textColor="@color/segmented_text_color"/>
+                    <RadioButton android:id="@+id/wn6" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_margin="2dp"
+                        android:text="6" android:gravity="center" android:button="@null" android:background="@drawable/segmented_button_bg" android:textColor="@color/segmented_text_color"/>
+                </RadioGroup>
+
+                <!-- Кількість спіралей -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Кількість спіралей" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="10dp"/>
+                <RadioGroup android:id="@+id/rgCoils" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="15dp">
+                    <RadioButton android:id="@+id/cn1" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_margin="2dp"
+                        android:text="1" android:gravity="center" android:button="@null" android:background="@drawable/segmented_button_bg" android:textColor="@color/segmented_text_color" android:checked="true"/>
+                    <RadioButton android:id="@+id/cn2" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_margin="2dp"
+                        android:text="2" android:gravity="center" android:button="@null" android:background="@drawable/segmented_button_bg" android:textColor="@color/segmented_text_color"/>
+                    <RadioButton android:id="@+id/cn3" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_margin="2dp"
+                        android:text="3" android:gravity="center" android:button="@null" android:background="@drawable/segmented_button_bg" android:textColor="@color/segmented_text_color"/>
+                    <RadioButton android:id="@+id/cn4" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_margin="2dp"
+                        android:text="4" android:gravity="center" android:button="@null" android:background="@drawable/segmented_button_bg" android:textColor="@color/segmented_text_color"/>
+                </RadioGroup>
+
+                <!-- Тип спіралі -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Тип спіралі" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="10dp"/>
+                <RadioGroup android:id="@+id/rgType" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="15dp">
+                    <RadioButton android:id="@+id/ct2" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_margin="2dp"
+                        android:text="Простий" android:gravity="center" android:button="@null" android:background="@drawable/segmented_button_bg" android:textColor="@color/segmented_text_color" android:tag="2"/>
+                    <RadioButton android:id="@+id/ct1" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_margin="2dp"
+                        android:text="Мікрокойл" android:gravity="center" android:button="@null" android:background="@drawable/segmented_button_bg" android:textColor="@color/segmented_text_color" android:checked="true" android:tag="1"/>
+                    <RadioButton android:id="@+id/ct3" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1" android:layout_margin="2dp"
+                        android:text="Клэптон" android:gravity="center" android:button="@null" android:background="@drawable/segmented_button_bg" android:textColor="@color/segmented_text_color" android:tag="3"/>
+                </RadioGroup>
+
+                <!-- Wire Diam -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Діаметр дроту" android:textColor="#333333" android:textSize="14sp" android:textStyle="bold" android:layout_marginBottom="5dp"/>
+                <Spinner android:id="@+id/spinnerWireDiam" android:layout_width="match_parent" android:layout_height="40dp"
+                    android:background="@drawable/input_bg" android:layout_marginBottom="15dp"/>
+
+                <!-- Coil Diam -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Діаметр витка" android:textColor="#333333" android:textSize="14sp" android:textStyle="bold" android:layout_marginBottom="5dp"/>
+                <Spinner android:id="@+id/spinnerCoilDiam" android:layout_width="match_parent" android:layout_height="40dp"
+                    android:background="@drawable/input_bg" android:layout_marginBottom="15dp"/>
+
+                <!-- Windings and Twisted -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="15dp">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Кількість витків" android:textColor="#333333" android:textSize="14sp" android:textStyle="bold" android:layout_marginBottom="5dp"/>
+                        <Spinner android:id="@+id/spinnerWindings" android:layout_width="match_parent" android:layout_height="40dp"
+                            android:background="@drawable/input_bg"/>
+                    </LinearLayout>
+                    <CheckBox android:id="@+id/cbTwisted" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Косичка" android:textColor="#333333" android:textSize="13sp" android:layout_marginStart="10dp" android:buttonTint="#4CAF50"/>
+                </LinearLayout>
+
+                <!-- Legs length -->
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Довжина ніжок" android:textColor="#333333" android:textSize="14sp" android:textStyle="bold" android:layout_marginBottom="5dp"/>
+                <Spinner android:id="@+id/spinnerLegs" android:layout_width="match_parent" android:layout_height="40dp"
+                    android:background="@drawable/input_bg" android:layout_marginBottom="15dp"/>
+
+                <!-- Wire Type and TCR -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="bottom" android:layout_marginBottom="15dp">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Тип дроту" android:textColor="#333333" android:textSize="14sp" android:textStyle="bold" android:layout_marginBottom="5dp"/>
+                        <Spinner android:id="@+id/spinnerWireType" android:layout_width="match_parent" android:layout_height="40dp"
+                            android:background="@drawable/input_bg"/>
+                    </LinearLayout>
+                    <TextView android:id="@+id/tvTCR" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="TCR: 0.00001" android:textColor="#666666" android:textSize="12sp" android:layout_marginStart="10dp" android:paddingBottom="10dp"/>
+                </LinearLayout>
+
+                <!-- Clapton Block -->
+                <LinearLayout android:id="@+id/layoutClapton" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:background="#d9edf7" android:padding="10dp" android:layout_marginBottom="15dp" android:visibility="gone">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Обмотка" android:textColor="#333333" android:textSize="14sp" android:textStyle="bold" android:layout_marginBottom="5dp"/>
+                    <Spinner android:id="@+id/spinnerClapWireDiam" android:layout_width="match_parent" android:layout_height="40dp"
+                        android:background="@drawable/input_bg" android:layout_marginBottom="8dp"/>
+                    <Spinner android:id="@+id/spinnerClapWireType" android:layout_width="match_parent" android:layout_height="40dp"
+                        android:background="@drawable/input_bg"/>
+                </LinearLayout>
+
+                <!-- Voltage and Correction -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Напруга (V)" android:textColor="#333333" android:textSize="14sp" android:textStyle="bold" android:layout_marginBottom="5dp"/>
+                        <EditText android:id="@+id/etVoltage" android:layout_width="match_parent" android:layout_height="40dp"
+                            android:background="@drawable/input_bg" android:textColor="#333333" android:inputType="numberDecimal"
+                            android:text="3.7" android:paddingStart="8dp" android:paddingEnd="8dp" android:textSize="14sp" android:importantForAutofill="no" />
+                    </LinearLayout>
+                    <CheckBox android:id="@+id/cbOhmCorrection" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Корекція (10%)" android:textColor="#333333" android:textSize="12sp" android:layout_marginStart="10dp" android:buttonTint="#4CAF50" android:checked="true"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Кнопка розрахунку -->
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/btnCalculate" android:layout_width="match_parent" android:layout_height="45dp"
+                android:background="@drawable/btn_add_bg" android:textColor="#ffffff" android:text="Розрахувати"
+                android:textSize="16sp" android:textAllCaps="false" android:fontFamily="sans-serif-medium" android:layout_marginBottom="15dp"/>
+
+            <!-- RESULTS BLOCK -->
+            <LinearLayout android:id="@+id/resultContainer" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:background="@drawable/calc_block_bg" android:padding="15dp" android:visibility="gone">
+
+                <!-- Power Row -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginBottom="10dp">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Потужність" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold"/>
+                        <TextView android:id="@+id/tvCoolHot" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Оптимальна" android:textColor="#00C800" android:textSize="12sp" android:textStyle="bold"/>
+                    </LinearLayout>
+                    <TextView android:id="@+id/tvPowerValue" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:background="#4CAF50" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold"
+                        android:padding="8dp" android:minWidth="120dp" android:gravity="center" android:text="12.46 Watt" />
+                </LinearLayout>
+
+                <!-- Recommended Power Row -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="10dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                        android:text="рекомендована" android:textColor="#666666" android:textSize="12sp" android:textStyle="italic"/>
+                    <TextView android:id="@+id/tvOptPower" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textColor="#666666" android:textSize="12sp" android:textStyle="italic" android:text="14.91 Watt" />
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DDDDDD" android:layout_marginBottom="10dp"/>
+
+                <!-- Simple Rows -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="10dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                        android:text="Опір" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tvResistance" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textColor="#333333" android:textSize="18sp" android:textStyle="bold" android:text="1.10 Ω" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="10dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                        android:text="Довжина дроту" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tvWireLength" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textColor="#333333" android:textSize="18sp" android:textStyle="bold" android:text="55.07 мм х 1" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="10dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                        android:text="Струм" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tvCurrent" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textColor="#333333" android:textSize="18sp" android:textStyle="bold" android:text="3.37 Amp" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="10dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                        android:text="Поверхнева потужність" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tvPowDen" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textColor="#333333" android:textSize="18sp" android:textStyle="bold" android:text="0.21 W/мм²" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="10dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                        android:text="Довжина спіралі" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tvCoWidth" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textColor="#333333" android:textSize="18sp" android:textStyle="bold" android:text="2.2 мм" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                        android:text="Температура (суха)" android:textColor="#333333" android:textSize="16sp" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tvTemperature" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:background="#FFCC00" android:textColor="#FFFFFF" android:textSize="18sp" android:textStyle="bold"
+                        android:padding="8dp" android:minWidth="120dp" android:gravity="center" android:text="1892 K" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3498db"
+                android:textSize="10sp"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

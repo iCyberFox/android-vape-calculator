@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Main Background -->
+    <item>
+        <shape>
+            <solid android:color="@color/result_bg"/>
+            <corners android:radius="8dp"/>
+        </shape>
+    </item>
+    <!-- Left Stripe -->
+    <item android:width="6dp" android:gravity="left">
+        <shape>
+            <solid android:color="@color/result_stripe"/>
+            <corners
+                android:topLeftRadius="8dp"
+                android:bottomLeftRadius="8dp"/>
+        </shape>
+    </item>
+</layer-list>

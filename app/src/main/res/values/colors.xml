@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#f5f7fa</color>
+    <color name="primary_dark">#ffffff</color>
+    <color name="accent">#1e6cd9</color> <!-- Deep blue for Calculate -->
+    <color name="accent_light">#5dade2</color>
+    <color name="surface">#ffffff</color>
+    <color name="surface_card">#ffffff</color>
+    <color name="text_primary">#2c3e50</color>
+    <color name="text_secondary">#7f8c8d</color>
+    <color name="text_hint">#bdc3c7</color>
+    <color name="result_bg">#E3F2FD</color>
+    <color name="result_stripe">#3498db</color>
+    <color name="warning_bg">#fdf2e9</color>
+    <color name="success">#42b883</color> <!-- Vibrant green -->
+    <color name="success_dark">#3da473</color>
+    <color name="error">#e25c50</color> <!-- Red for Remove -->
+    <color name="warning">#e67e22</color>
+    <color name="divider">#dcdde1</color>
+    <color name="input_bg">#ffffff</color>
+
+    <color name="btn_recipes_bg">#d8dee9</color>
+    <color name="btn_recipes_text">#2c3e50</color>
+
+    <color name="nav_item_selected">#1e6cd9</color>
+    <color name="nav_item_unselected">#7f8c8d</color>
+</resources>

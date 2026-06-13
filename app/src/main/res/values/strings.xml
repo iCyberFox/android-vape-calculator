@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Вейп Калькулятори</string>
+    <string name="nav_liquid">Рідина</string>
+    <string name="nav_base">Основи</string>
+    <string name="nav_boost">Буст</string>
+    <string name="nav_shot">Шот</string>
+    <string name="nav_general_shot">Заг. шот</string>
+    <string name="nav_coil">Спіраль</string>
+    <string name="btn_calculate">Розрахувати</string>
+    <string name="btn_add_flavor">+ Додати ароматизатор</string>
+    <string name="label_total_volume">Загальний об\'єм рідини (мл):</string>
+    <string name="label_base_type">Тип бази VG/PG:</string>
+    <string name="label_nicotine">Нікотин (мг/мл):</string>
+    <string name="label_flavors">Ароматизатори:</string>
+    <string name="hint_flavor_name">Назва ароматизатора</string>
+    <string name="hint_flavor_percent">%</string>
+    <string name="error_volume">Введіть коректний об\'єм</string>
+    <string name="error_no_flavors">Додайте хоча б один ароматизатор</string>
+    <string name="error_flavor_percent">Загальний % ароматизаторів: 0–30%</string>
+    <string name="results_title">Результати:</string>
+    <string name="by_author">By BMWeast</string>
+</resources>

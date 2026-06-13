@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_liquid"
+        android:title="Рідина" />
+    <item
+        android:id="@+id/nav_base"
+        android:title="Основи" />
+    <item
+        android:id="@+id/nav_boost"
+        android:title="Буст" />
+    <item
+        android:id="@+id/nav_shot"
+        android:title="Шот" />
+    <item
+        android:id="@+id/nav_coil"
+        android:title="Спіраль" />
+</menu>
